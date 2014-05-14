@@ -1,0 +1,78 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SunPath.WP", "src\SunPath.WP\SunPath.WP.csproj", "{066D1422-7793-4959-B6C8-CF1B3626B9E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SunPath.Droid", "src\SunPath.Droid\SunPath.Droid.csproj", "{57A22C66-608D-4895-B4E1-05384F07015D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SunPath.Core", "src\SunPath.Core\SunPath.Core.csproj", "{C60105A7-0BA5-4247-BF2D-BF3D4C6102BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SunPath.Core.Tests", "src\SunPath.Core.Tests\SunPath.Core.Tests.csproj", "{F54CAE84-9075-41D4-A770-80FC63EC307E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionFiles", "SolutionFiles", "{F6BA5758-E52B-45EF-A9A7-B9832EDAF02F}"
+	ProjectSection(SolutionItems) = preProject
+		src\README.txt = src\README.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM = Debug|ARM
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|ARM = Release|ARM
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{57A22C66-608D-4895-B4E1-05384F07015D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57A22C66-608D-4895-B4E1-05384F07015D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57A22C66-608D-4895-B4E1-05384F07015D}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{57A22C66-608D-4895-B4E1-05384F07015D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{57A22C66-608D-4895-B4E1-05384F07015D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57A22C66-608D-4895-B4E1-05384F07015D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57A22C66-608D-4895-B4E1-05384F07015D}.Release|ARM.ActiveCfg = Release|Any CPU
+		{57A22C66-608D-4895-B4E1-05384F07015D}.Release|x86.ActiveCfg = Release|Any CPU
+		{C60105A7-0BA5-4247-BF2D-BF3D4C6102BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C60105A7-0BA5-4247-BF2D-BF3D4C6102BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C60105A7-0BA5-4247-BF2D-BF3D4C6102BF}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{C60105A7-0BA5-4247-BF2D-BF3D4C6102BF}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C60105A7-0BA5-4247-BF2D-BF3D4C6102BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C60105A7-0BA5-4247-BF2D-BF3D4C6102BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C60105A7-0BA5-4247-BF2D-BF3D4C6102BF}.Release|ARM.ActiveCfg = Release|Any CPU
+		{C60105A7-0BA5-4247-BF2D-BF3D4C6102BF}.Release|x86.ActiveCfg = Release|Any CPU
+		{F54CAE84-9075-41D4-A770-80FC63EC307E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F54CAE84-9075-41D4-A770-80FC63EC307E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F54CAE84-9075-41D4-A770-80FC63EC307E}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{F54CAE84-9075-41D4-A770-80FC63EC307E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F54CAE84-9075-41D4-A770-80FC63EC307E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F54CAE84-9075-41D4-A770-80FC63EC307E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F54CAE84-9075-41D4-A770-80FC63EC307E}.Release|ARM.ActiveCfg = Release|Any CPU
+		{F54CAE84-9075-41D4-A770-80FC63EC307E}.Release|x86.ActiveCfg = Release|Any CPU
+		{066D1422-7793-4959-B6C8-CF1B3626B9E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{066D1422-7793-4959-B6C8-CF1B3626B9E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{066D1422-7793-4959-B6C8-CF1B3626B9E1}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{066D1422-7793-4959-B6C8-CF1B3626B9E1}.Debug|ARM.ActiveCfg = Debug|ARM
+		{066D1422-7793-4959-B6C8-CF1B3626B9E1}.Debug|ARM.Build.0 = Debug|ARM
+		{066D1422-7793-4959-B6C8-CF1B3626B9E1}.Debug|ARM.Deploy.0 = Debug|ARM
+		{066D1422-7793-4959-B6C8-CF1B3626B9E1}.Debug|x86.ActiveCfg = Debug|x86
+		{066D1422-7793-4959-B6C8-CF1B3626B9E1}.Debug|x86.Build.0 = Debug|x86
+		{066D1422-7793-4959-B6C8-CF1B3626B9E1}.Debug|x86.Deploy.0 = Debug|x86
+		{066D1422-7793-4959-B6C8-CF1B3626B9E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{066D1422-7793-4959-B6C8-CF1B3626B9E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{066D1422-7793-4959-B6C8-CF1B3626B9E1}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{066D1422-7793-4959-B6C8-CF1B3626B9E1}.Release|ARM.ActiveCfg = Release|ARM
+		{066D1422-7793-4959-B6C8-CF1B3626B9E1}.Release|ARM.Build.0 = Release|ARM
+		{066D1422-7793-4959-B6C8-CF1B3626B9E1}.Release|ARM.Deploy.0 = Release|ARM
+		{066D1422-7793-4959-B6C8-CF1B3626B9E1}.Release|x86.ActiveCfg = Release|x86
+		{066D1422-7793-4959-B6C8-CF1B3626B9E1}.Release|x86.Build.0 = Release|x86
+		{066D1422-7793-4959-B6C8-CF1B3626B9E1}.Release|x86.Deploy.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = src\SunPath.Droid\SunPath.Droid.csproj
+	EndGlobalSection
+EndGlobal
