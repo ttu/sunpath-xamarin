@@ -6,9 +6,11 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 
-namespace SunPosition.Android
+namespace SunPath.Droid
 {
-	[Activity (Label = "SunPosition.Android", MainLauncher = true)]
+	// http://docs.xamarin.com/recipes/android/other_ux/textureview/display_a_stream_from_the_camera/
+
+	[Activity (Label = "SunPath.Droid", MainLauncher = true)]
 	public class MainActivity : Activity
 	{
 		int count = 1;
