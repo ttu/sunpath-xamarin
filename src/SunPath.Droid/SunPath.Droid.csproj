@@ -49,6 +49,15 @@
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="CameraActivity.cs" />
+    <Compile Include="..\SunPath.Core\PositionData.cs">
+      <Link>SunPath.Core\PositionData.cs</Link>
+    </Compile>
+    <Compile Include="..\SunPath.Core\SunPath.cs">
+      <Link>SunPath.Core\SunPath.cs</Link>
+    </Compile>
+    <Compile Include="..\SunPath.Core\SunPosition.cs">
+      <Link>SunPath.Core\SunPosition.cs</Link>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -61,4 +70,7 @@
     <AndroidResource Include="Resources\drawable\Icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="SunPath.Core\" />
+  </ItemGroup>
 </Project>

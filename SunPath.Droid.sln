@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionFiles", "SolutionFiles", "{F6BA5758-E52B-45EF-A9A7-B9832EDAF02F}"
+	ProjectSection(SolutionItems) = preProject
+		src\README.txt = src\README.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SunPath.Droid", "src\SunPath.Droid\SunPath.Droid.csproj", "{412ACF10-BE6A-4B08-B678-D1409825B2B7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM = Debug|ARM
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|ARM = Release|ARM
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{412ACF10-BE6A-4B08-B678-D1409825B2B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{412ACF10-BE6A-4B08-B678-D1409825B2B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{412ACF10-BE6A-4B08-B678-D1409825B2B7}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{412ACF10-BE6A-4B08-B678-D1409825B2B7}.Debug|ARM.Build.0 = Debug|Any CPU
+		{412ACF10-BE6A-4B08-B678-D1409825B2B7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{412ACF10-BE6A-4B08-B678-D1409825B2B7}.Debug|x86.Build.0 = Debug|Any CPU
+		{412ACF10-BE6A-4B08-B678-D1409825B2B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{412ACF10-BE6A-4B08-B678-D1409825B2B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{412ACF10-BE6A-4B08-B678-D1409825B2B7}.Release|ARM.ActiveCfg = Release|Any CPU
+		{412ACF10-BE6A-4B08-B678-D1409825B2B7}.Release|ARM.Build.0 = Release|Any CPU
+		{412ACF10-BE6A-4B08-B678-D1409825B2B7}.Release|x86.ActiveCfg = Release|Any CPU
+		{412ACF10-BE6A-4B08-B678-D1409825B2B7}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = src\SunPath.Droid\SunPath.Droid.csproj
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
