@@ -40,6 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="PositionData.cs" />
+    <Compile Include="SunPath.cs" />
     <Compile Include="SunPosition.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

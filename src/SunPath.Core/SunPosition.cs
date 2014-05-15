@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 
 namespace SunPath.Core
@@ -31,7 +32,7 @@ namespace SunPath.Core
 
         public static PositionData CalculateSunPosition(
             DateTime dateTime, double latitude, double longitude)
-        {
+        {           
             // Convert to UTC
             dateTime = dateTime.ToUniversalTime();
 
