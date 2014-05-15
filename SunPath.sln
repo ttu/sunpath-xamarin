@@ -3,18 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SunPath.WP", "src\SunPath.WP\SunPath.WP.csproj", "{066D1422-7793-4959-B6C8-CF1B3626B9E1}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SunPath.Core", "src\SunPath.Core\SunPath.Core.csproj", "{C60105A7-0BA5-4247-BF2D-BF3D4C6102BF}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SunPath.Core.Tests", "src\SunPath.Core.Tests\SunPath.Core.Tests.csproj", "{F54CAE84-9075-41D4-A770-80FC63EC307E}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionFiles", "SolutionFiles", "{F6BA5758-E52B-45EF-A9A7-B9832EDAF02F}"
 	ProjectSection(SolutionItems) = preProject
 		src\README.txt = src\README.txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SunPath.Droid", "src\SunPath.Droid\SunPath.Droid.csproj", "{412ACF10-BE6A-4B08-B678-D1409825B2B7}"
+Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "SunPath.Core", "src\SunPath.Core\SunPath.Core.csproj", "{8E572C24-C2F1-4701-9F6F-4AB15701070E}"
+EndProject
+Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "SunPath.Core.Tests", "src\SunPath.Core.Tests\SunPath.Core.Tests.csproj", "{F54CAE84-9075-41D4-A770-80FC63EC307E}"
+EndProject
+Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "SunPath.WP", "src\SunPath.WP\SunPath.WP.csproj", "{066D1422-7793-4959-B6C8-CF1B3626B9E1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -44,26 +42,14 @@ Global
 		{066D1422-7793-4959-B6C8-CF1B3626B9E1}.Release|x86.ActiveCfg = Release|x86
 		{066D1422-7793-4959-B6C8-CF1B3626B9E1}.Release|x86.Build.0 = Release|x86
 		{066D1422-7793-4959-B6C8-CF1B3626B9E1}.Release|x86.Deploy.0 = Release|x86
-		{412ACF10-BE6A-4B08-B678-D1409825B2B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{412ACF10-BE6A-4B08-B678-D1409825B2B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{412ACF10-BE6A-4B08-B678-D1409825B2B7}.Debug|ARM.ActiveCfg = Debug|Any CPU
-		{412ACF10-BE6A-4B08-B678-D1409825B2B7}.Debug|ARM.Build.0 = Debug|Any CPU
-		{412ACF10-BE6A-4B08-B678-D1409825B2B7}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{412ACF10-BE6A-4B08-B678-D1409825B2B7}.Debug|x86.Build.0 = Debug|Any CPU
-		{412ACF10-BE6A-4B08-B678-D1409825B2B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{412ACF10-BE6A-4B08-B678-D1409825B2B7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{412ACF10-BE6A-4B08-B678-D1409825B2B7}.Release|ARM.ActiveCfg = Release|Any CPU
-		{412ACF10-BE6A-4B08-B678-D1409825B2B7}.Release|ARM.Build.0 = Release|Any CPU
-		{412ACF10-BE6A-4B08-B678-D1409825B2B7}.Release|x86.ActiveCfg = Release|Any CPU
-		{412ACF10-BE6A-4B08-B678-D1409825B2B7}.Release|x86.Build.0 = Release|Any CPU
-		{C60105A7-0BA5-4247-BF2D-BF3D4C6102BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C60105A7-0BA5-4247-BF2D-BF3D4C6102BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C60105A7-0BA5-4247-BF2D-BF3D4C6102BF}.Debug|ARM.ActiveCfg = Debug|Any CPU
-		{C60105A7-0BA5-4247-BF2D-BF3D4C6102BF}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{C60105A7-0BA5-4247-BF2D-BF3D4C6102BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C60105A7-0BA5-4247-BF2D-BF3D4C6102BF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C60105A7-0BA5-4247-BF2D-BF3D4C6102BF}.Release|ARM.ActiveCfg = Release|Any CPU
-		{C60105A7-0BA5-4247-BF2D-BF3D4C6102BF}.Release|x86.ActiveCfg = Release|Any CPU
+		{8E572C24-C2F1-4701-9F6F-4AB15701070E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E572C24-C2F1-4701-9F6F-4AB15701070E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E572C24-C2F1-4701-9F6F-4AB15701070E}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{8E572C24-C2F1-4701-9F6F-4AB15701070E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8E572C24-C2F1-4701-9F6F-4AB15701070E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E572C24-C2F1-4701-9F6F-4AB15701070E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E572C24-C2F1-4701-9F6F-4AB15701070E}.Release|ARM.ActiveCfg = Release|Any CPU
+		{8E572C24-C2F1-4701-9F6F-4AB15701070E}.Release|x86.ActiveCfg = Release|Any CPU
 		{F54CAE84-9075-41D4-A770-80FC63EC307E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F54CAE84-9075-41D4-A770-80FC63EC307E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F54CAE84-9075-41D4-A770-80FC63EC307E}.Debug|ARM.ActiveCfg = Debug|Any CPU
@@ -76,7 +62,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = src\SunPath.WP\SunPath.WP.csproj
+		StartupItem = src\SunPath.Core\SunPath.Core.csproj
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

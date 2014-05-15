@@ -20,15 +20,25 @@
             <ColumnDefinition Width="160" />
         </Grid.ColumnDefinitions>
 
-        <Canvas x:Name="viewfinderCanvas" Width="640" Height="480" 
-                   HorizontalAlignment="Left" >
+        <Canvas x:Name="viewfinderCanvas" 
+                Width="640" 
+                Height="480" 
+                HorizontalAlignment="Left"
+                Grid.Column="0">
 
             <!--Camera viewfinder -->
             <Canvas.Background>
                 <VideoBrush x:Name="viewfinderBrush" />
             </Canvas.Background>
+            
         </Canvas>
 
+        <Canvas Name="paintSurface" Grid.Column="0">
+            <Canvas.Background>
+                <SolidColorBrush Color="White" Opacity="0" />
+            </Canvas.Background>
+        </Canvas>
+        
         <!--Button StackPanel to the right of viewfinder>-->
         <StackPanel Grid.Column="1" >
             <Button x:Name="ShutterButton" Content="SH" Click="ShutterButton_Click" FontSize="26" FontWeight="ExtraBold" Height="75" />

@@ -8,7 +8,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SunPath.Core.Tests</RootNamespace>
     <AssemblyName>SunPath.Core.Tests</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -16,6 +16,7 @@
     <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
     <IsCodedUITest>False</IsCodedUITest>
     <TestProjectType>UnitTest</TestProjectType>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -50,14 +51,17 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="..\SunPath.Core\PositionData.cs">
+      <Link>LinkedFiles\PositionData.cs</Link>
+    </Compile>
+    <Compile Include="..\SunPath.Core\SunPath.cs">
+      <Link>LinkedFiles\SunPath.cs</Link>
+    </Compile>
+    <Compile Include="..\SunPath.Core\SunPosition.cs">
+      <Link>LinkedFiles\SunPosition.cs</Link>
+    </Compile>
     <Compile Include="SunPathTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\SunPath.Core\SunPath.Core.csproj">
-      <Project>{c60105a7-0ba5-4247-bf2d-bf3d4c6102bf}</Project>
-      <Name>SunPath.Core</Name>
-    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
