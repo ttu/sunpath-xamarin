@@ -110,8 +110,8 @@ namespace SunPath.Core
                 azimuth += 2 * Math.PI;
             }
 
-            Debug.WriteLine("Altitude: " + altitude * Rad2Deg);
-            Debug.WriteLine("Azimuth: " + azimuth * Rad2Deg);
+            //Debug.WriteLine("Altitude: " + altitude * Rad2Deg);
+            //Debug.WriteLine("Azimuth: " + azimuth * Rad2Deg);
 
             return new PositionData() { Altitude = altitude * Rad2Deg, Azimuth = azimuth * Rad2Deg };
         }

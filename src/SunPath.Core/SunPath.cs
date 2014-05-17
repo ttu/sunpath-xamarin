@@ -36,7 +36,7 @@ namespace SunPath.Core
             return retVal;
         }
 
-        public static Dictionary<DateTime, PositionData> GetPointsInArea(Dictionary<DateTime, PositionData> source, int minX, int maxX, int minY, int maxY)
+        public static Dictionary<DateTime, PositionData> GetPointsInArea(Dictionary<DateTime, PositionData> source, double minX, double maxX, double minY, double maxY)
         {
             var selected = source.Where(s =>
                 s.Value.Azimuth >= minX &&

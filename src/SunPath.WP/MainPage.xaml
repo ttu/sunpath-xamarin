@@ -28,24 +28,27 @@
 
             <!--Camera viewfinder -->
             <Canvas.Background>
-                <VideoBrush x:Name="viewfinderBrush" />
+                <VideoBrush x:Name="ViewfinderBrush" />
             </Canvas.Background>
             
         </Canvas>
 
-        <Canvas Name="paintSurface" Grid.Column="0">
+        <Canvas Name="PaintSurface" Grid.Column="0">
             <Canvas.Background>
                 <SolidColorBrush Color="White" Opacity="0" />
             </Canvas.Background>
         </Canvas>
         
-        <!--Button StackPanel to the right of viewfinder>-->
+        <!--Button StackPanel to the right of viewfinder-->
         <StackPanel Grid.Column="1" >
             <Button x:Name="ShutterButton" Content="SH" Click="ShutterButton_Click" FontSize="26" FontWeight="ExtraBold" Height="75" />
         </StackPanel>
 
-        <!--Used for debugging >-->
-        <TextBlock Height="40" HorizontalAlignment="Left" Margin="8,428,0,0" Name="txtDebug" VerticalAlignment="Top" Width="626" FontSize="24" FontWeight="ExtraBold" />
+        <!--Used for debugging-->
+        <TextBlock Height="40" HorizontalAlignment="Left" Margin="8,348,0,0" Text="{Binding DebugText}" VerticalAlignment="Top" Width="626" FontSize="24" FontWeight="ExtraBold" />
+        <TextBlock Height="40" HorizontalAlignment="Left" Margin="8,388,0,0" Text="{Binding ViewingAzimuthDeg}" VerticalAlignment="Top" Width="626" FontSize="24" FontWeight="ExtraBold" />
+        <TextBlock Height="40" HorizontalAlignment="Left" Margin="8,428,0,0" Text="{Binding ViewingAltitudeDeg}" VerticalAlignment="Top" Width="626" FontSize="24" FontWeight="ExtraBold" />
+
     </Grid>
     
 </phone:PhoneApplicationPage>
