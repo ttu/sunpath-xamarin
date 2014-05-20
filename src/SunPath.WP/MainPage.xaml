@@ -6,49 +6,41 @@
     xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="clr-namespace:GART.Controls;assembly=GART.WP8"
     mc:Ignorable="d"
     FontFamily="{StaticResource PhoneFontFamilyNormal}"
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
     SupportedOrientations="Landscape" Orientation="LandscapeLeft"
-    shell:SystemTray.IsVisible="False">
+    shell:SystemTray.IsVisible="False"
+    Loaded="PhoneApplicationPage_Loaded">
+
+    <phone:PhoneApplicationPage.Resources>
+        <DataTemplate x:Key="MyItemTemplate">
+            <Border BorderBrush="Black" BorderThickness="4" CornerRadius="8" Background="#FF003847" Width="320" Canvas.ZIndex="20">
+                <StackPanel Margin="4">
+                    <TextBlock x:Name="NameBlock" TextWrapping="NoWrap" Text="{Binding Content}" FontSize="38" VerticalAlignment="Center" Margin="0,0,4,0"  TextTrimming="WordEllipsis" />
+                </StackPanel>
+            </Border>
+        </DataTemplate>
+    </phone:PhoneApplicationPage.Resources>
 
     <!--LayoutRoot is the root grid where all page content is placed-->
     <Grid x:Name="LayoutRoot" Background="Transparent">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="640" />
-            <ColumnDefinition Width="160" />
-        </Grid.ColumnDefinitions>
 
-        <Canvas x:Name="viewfinderCanvas" 
-                Width="640" 
-                Height="480" 
-                HorizontalAlignment="Left"
-                Grid.Column="0">
-
-            <!--Camera viewfinder -->
-            <Canvas.Background>
-                <VideoBrush x:Name="ViewfinderBrush" />
-            </Canvas.Background>
-            
-        </Canvas>
-
-        <Canvas Name="PaintSurface" Grid.Column="0">
-            <Canvas.Background>
-                <SolidColorBrush Color="White" Opacity="0" />
-            </Canvas.Background>
-        </Canvas>
-        
-        <!--Button StackPanel to the right of viewfinder-->
-        <StackPanel Grid.Column="1" >
-            <Button x:Name="ShutterButton" Content="SH" Click="ShutterButton_Click" FontSize="26" FontWeight="ExtraBold" Height="75" />
-        </StackPanel>
+        <controls:ARDisplay Name="ArDisplay" AttitudeRefreshRate="50" 
+                                             MovementThreshold="10">
+            <controls:VideoPreview x:Name="VideoPreview" Canvas.ZIndex="1" />
+            <controls:WorldView x:Name="WorldView"
+                                MinItemScale="0.1"
+                                MaxItemScale="1.0"
+                                FarClippingPlane="100000000000.0"
+                                NearClippingPlane="1.0"
+                                Canvas.ZIndex="1"
+                                ItemTemplate="{StaticResource MyItemTemplate}" />
+        </controls:ARDisplay>
 
         <!--Used for debugging-->
         <TextBlock Height="40" HorizontalAlignment="Left" Margin="8,348,0,0" Text="{Binding DebugText}" VerticalAlignment="Top" Width="626" FontSize="24" FontWeight="ExtraBold" />
-        <TextBlock Height="40" HorizontalAlignment="Left" Margin="8,388,0,0" Text="{Binding ViewingAzimuthDeg}" VerticalAlignment="Top" Width="626" FontSize="24" FontWeight="ExtraBold" />
-        <TextBlock Height="40" HorizontalAlignment="Left" Margin="8,428,0,0" Text="{Binding ViewingAltitudeDeg}" VerticalAlignment="Top" Width="626" FontSize="24" FontWeight="ExtraBold" />
-
     </Grid>
-    
 </phone:PhoneApplicationPage>
